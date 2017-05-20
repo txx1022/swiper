@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="iscroll/touch.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="iscroll/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="iscroll/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{ margin: 0; padding: 0; }
+			html,body{ height: 100%; width: 100%; }
+			header{ height: 100px; line-height: 100px; background: yellow; font-size: 25px;  text-align: center;}
+			footer{ height: 100px; line-height: 100px; background: yellowgreen; font-size: 25px;  text-align: center;}
+			body{ display: flex; flex-direction: column; }
+			section{ flex: 1; overflow: hidden;}
+			li{ height: 100px; line-height: 100px; font-size: 25px; text-align: center; border-bottom: 1px solid mediumvioletred; }
+		</style>
+		<script>window.PointerEvent = void 0</script> <!-- //谷歌高级浏览器bug解决方案-->
+	</head>
+	<body>
+		<header>这是头部</header>
+		<section>
+			<ul>
+				<li>今天天气太热了1</li>
+				<li>今天天气太热了2</li>
+				<li>今天天气太热了3</li>
+				<li>今天天气太热了4</li>
+				<li>今天天气太热了5</li>
+				<li>今天天气太热了6</li>
+				<li>今天天气太热了7</li>
+			</ul>
+		</section>
+		<footer>这是尾部</footer>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var myScroll=new IScroll('section',{
+				mouseWheel:true,
+				scrollbars:true,	
+				
+			})
+		}
+		
+		
+	</script>
+</html>
